@@ -1,3 +1,36 @@
 #  Color Mix 🌈🖍️🎨
 ColorMix app built in Unit 4 Building Apps of Apple's Swift Explorations course. This has additional label to to show the float values for each color.
-The label's to show the float values for each color are assigned as bonus work.
+The labels? to show the float values for each color are given as an optional (Swift pun intended 😜)bonus assignment.
+
+## Background 👩🏼‍🎓 🧑🏿‍🎓 👨🏽‍🎓 👩🏻‍💻 👨🏾‍💻
+This project is part of Unit 4 in Apple's **Development in Swift Exploration** ([Teacher](https://books.apple.com/us/book/develop-in-swift-explorations-teacher-guide/id1581182814) and [Student](https://books.apple.com/us/book/develop-in-swift-explorations/id1581182728)) course. This app starts on page 301 in the student book. This app gives students much practice connecting storyboard elements to the ViewController Cocoa Touch Class file that controls that storyboard view. Additionally, this app project enables students to learn about the common iOS event actions such as buttons, switches, and sliders.
+
+This is a great first app that students get to build "from scratch" because it uses many of the common iOS app conventions.
+
+## Purpose 🖥 💻 📱
+The overall purpose of this project is to teach students how an app is built and the process app developers follow to start, test, improve, and finish an app. The project also gives students plenty of opportunities to practice some common actions in iOS app development such a control-dragging to connect UI elements to Cocoa Touch Class file that controls the View Controller through the use of the Assistant Editor in Xcode. If you are going to do this project individually or with your students, I am going to assume that you have access to Mac hardware, the Books app, Python installed on the Mac, and a Python interpreter.
+
+## Process 👩🏾‍🏫 👨🏻‍🏫 👨🏻‍💻 👩🏽‍💻
+The general process and flow of this project is in the format of an Apple Teacher Portfolio lesson. There are three parts/phases to the lesson
+    - Activate
+    - Explore 
+    - Apply
+ You can learn more about and sign up for Apple Teacher here: [Apple Teacher](https://www.apple.com/education/k12/teacher-resources/). 
+
+
+### Activate
+We want our students to activate any prior knowledge on the topic. My students have some experience in Adobe products, but do not have an extensive amount of knowledge on RGB. So, I have them watch this video [RGB Explained](https://www.youtube.com/watch?v=lL0pxSslCzo).
+
+
+### Explore
+Students will create their own RGB screen representation as shown in the video.
+
+    1. Have students launch Keynote.
+    2. Create a Keynote slide that displays the same color information representation when all three colors are displayed on a screen as shown in the video .
+
+
+### Apply 
+In this part of the project we build the app.
+    
+    1. The instructions and process of building the app starts on page 301 in the student book.
+    2. Individual steps and further explanations can be found as comments in the ViewController file in the project.
