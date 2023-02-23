@@ -25,6 +25,7 @@
 		EB2B986F2979799F00F2C832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2B98722979799F00F2C832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2B98742979799F00F2C832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB53313629A79B0E00EB428C /* ColorMix RGB sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ColorMix RGB sample.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		EB2B985A2979799E00F2C832 = {
 			isa = PBXGroup;
 			children = (
+				EB53313629A79B0E00EB428C /* ColorMix RGB sample.pdf */,
 				EB25E2002981495400513E05 /* README.md */,
 				EB2B98652979799E00F2C832 /* ColorMix */,
 				EB2B98642979799E00F2C832 /* Products */,
