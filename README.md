@@ -1,6 +1,6 @@
 #  Color Mix 🌈🖍️🎨
 ColorMix app built in Unit 4 Building Apps of Apple's Swift Explorations course. This has additional label to to show the float values for each color.
-The labels? to show the float values for each color are given as an optional (Swift pun intended 😜)bonus assignment.
+We have added additional labels to show the float values for each color are given as an optional (Swift pun intended 😜)bonus assignment.
 
 ## Background 👩🏼‍🎓 🧑🏿‍🎓 👨🏽‍🎓 👩🏻‍💻 👨🏾‍💻
 This project is part of Unit 4 in Apple's **Develop in Swift AP CS Principles** ([Teacher](https://books.apple.com/us/book/develop-in-swift-ap-cs-principles-teacher-guide/id1581182833) and [Student](https://books.apple.com/us/book/develop-in-swift-ap-cs-principles/id1581182719)) course and **Develop in Swift Explorations** ([Teacher](https://books.apple.com/us/book/develop-in-swift-explorations-teacher-guide/id1581182814) and [Student](https://books.apple.com/us/book/develop-in-swift-explorations/id1581182728)) course. This app starts on page 301 in the student book. This app gives students much practice connecting storyboard elements to the ViewController Cocoa Touch Class file that controls that storyboard view. Additionally, this app project enables students to learn about the common iOS event actions such as buttons, switches, and sliders.
