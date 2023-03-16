@@ -10,7 +10,7 @@ This is a great first app that students get to build "from scratch" because it u
 ## Purpose 🖥 💻 📱
 The overall purpose of this project is to teach students how an app is built and the process app developers follow to start, test, improve, and finish an app. The project also gives students plenty of opportunities to practice some common actions in iOS app development such as control-dragging to connect UI elements to Cocoa Touch Class file that controls the View Controller through the use of the Assistant Editor in Xcode. If you are going to do this project individually or with your students, I am going to assume that you have access to Mac hardware, the Books app, Python installed on the Mac, and a Python interpreter.
 
-#### Learning Goal
+### Learning Goal
 Students will learn how to build user interfaces in the Xcode Interface Builder tools, and tie user interface elements into code via actions and outlets. Students will practice creating outlets to access properties of a user interface view, and actions to respond to user interaction with buttons and other controls as they build a color picker app.
 
 ### Ohio CS Standard(s)
