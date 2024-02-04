@@ -10,6 +10,7 @@
 //  #19 - add a "Reset" button to the storyboard
 //  #24 - tint the buttons and the sliders as shown on pages 339 to 341
 // # BONUS: add a label to display each of the RGB label values
+// # BONUS: add a label to display Hexadecimal value for the current ColorMix color
 
 import UIKit
 
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var redLabel: UILabel!
     @IBOutlet weak var greenLabel: UILabel!
     @IBOutlet weak var blueLabel: UILabel!
+    @IBOutlet weak var hexValueLabel: UILabel!
     
     
     // MARK: - Instance Properties
@@ -100,7 +102,7 @@ class ViewController: UIViewController {
             // #16 - update the red value to use the value from the slider
             red = CGFloat(redSlider.value)
             // BONUS #3 - add the value for red slider to the red label
-            redLabel.text = "r = \(redSlider.value)"
+            redLabel.text = "Red = \(Int(redSlider.value * 255))"
         }
         if greenSwitch.isOn {
             // the next line is implemented in step #9 and updated in step #17
@@ -108,19 +110,25 @@ class ViewController: UIViewController {
             // #17 - update the green value to use the value from the slider
             green = CGFloat(greenSlider.value)
             // BONUS #4 - add the value for gree slider to the red label
-            greenLabel.text = "g = \(greenSlider.value)"
+            greenLabel.text = "Green = \(Int(greenSlider.value * 255))"
         }
         if blueSwitch.isOn {
             // the next line is implemented in step #9 and updated in step #18
             // blue = 1
             // #18 - update the blue value to use the value from the slider
             blue = CGFloat(blueSlider.value)
-            // BONUS #5 - add the value for blue slider to the red label
-            blueLabel.text = "b = \(blueSlider.value)"
+            // BONUS #5 - add the value for blue slider to the blue label
+            blueLabel.text = "Blue = \(Int(blueSlider.value * 255))"
         }
         
         let color = UIColor(red: red, green: green, blue: blue, alpha: 1)
         colorView.backgroundColor = color
+        
+        // BONUS #7b - convert rgb to hexadecimal value
+        let hexValue = rgbToHex(red: Int(redSlider.value * 255), green: Int(greenSlider.value * 255), blue: Int(blueSlider.value * 255))
+        
+        hexValueLabel.text = "\(hexValue)"
+
     }
     
     // #21 - create this as a blank function
@@ -130,13 +138,14 @@ class ViewController: UIViewController {
         greenSwitch.isOn = false
         blueSwitch.isOn = false
         
-        redSlider.value = 1
-        greenSlider.value = 1
-        blueSlider.value = 1
+        redSlider.value = 0
+        greenSlider.value = 0
+        blueSlider.value = 0
         
-        redLabel.text = "r = 0"
-        greenLabel.text = "g = 0"
-        blueLabel.text = "b = 0"
+        redLabel.text = "Red = 0"
+        greenLabel.text = "Green = 0"
+        blueLabel.text = "Blue = 0"
+       
         
         updateColor()
         colorView.backgroundColor = .systemGray
@@ -151,6 +160,14 @@ class ViewController: UIViewController {
         blueSlider.isEnabled = blueSwitch.isOn
     }
 
+    // #BONUS 7a - function to convert RGB to Hexadecimal
+    func rgbToHex(red: Int, green: Int, blue: Int) -> String {
+        let redHexValue = String(format: "%02X", red)
+        let greenHexValue = String(format: "%02X", green)
+        let blueHexValue = String(format: "%02X", blue)
+        
+        return "#\(redHexValue)\(greenHexValue)\(blueHexValue)"
+    }
 
 }
 
